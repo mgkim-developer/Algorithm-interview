@@ -1,7 +1,7 @@
 from random import randint
 import time
 
-# 배열에 10,000개의 정소를 삽입
+# 배열에 10,000개의 정수를 삽입
 array = []
 for _ in range(10000):
     array.append(randint(1, 100))   # 1부터 100 사이의 랜덤한 정수
