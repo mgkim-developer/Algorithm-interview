@@ -1051,7 +1051,7 @@ print('-------------------------------------------------------------------------
 
 from itertools import permutations
 data = ['A', 'B', 'C']          # 데이터 분비
-result = list(permutations(data,2))      #모든 순열 구하기
+result = list(permutations(data,3))      #모든 순열 구하기
 print(result)
 
 # combinations 는 리스트와 같은 iterable 객체에서 r개의 데이터를 뽑아 순서를 고려하지 않고 나열하는 모든 경우(조합)를 계산한다.
