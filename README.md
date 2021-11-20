@@ -21,5 +21,9 @@
 
 ### [Useful function library]
 
-[2차원 리스트(행렬)를 90도 회전시키는 함수](https://github.com/mgkim-developer/Algorithm-interview/blob/main/%EC%9C%A0%EC%9A%A9%ED%95%9C%20%ED%95%A8%EC%88%98%20%EC%9E%91%EC%84%B1%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/A%20function%20that%20rotates%20the%202D%20list%2090%20degrees%20to%20the%20right.py)
+[2차원 리스트(행렬)를 오른쪽으로 90도 회전시키는 함수](https://github.com/mgkim-developer/Algorithm-interview/blob/main/%EC%9C%A0%EC%9A%A9%ED%95%9C%20%ED%95%A8%EC%88%98%20%EC%9E%91%EC%84%B1%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/A%20function%20that%20rotates%20the%202D%20list%2090%20degrees%20to%20the%20right.py)
+
+[2차원 리스트(행렬)를 왼쪽으로 90도 회전시키는 함수](https://github.com/mgkim-developer/Algorithm-interview/blob/main/%EC%9C%A0%EC%9A%A9%ED%95%9C%20%ED%95%A8%EC%88%98%20%EC%9E%91%EC%84%B1%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/A%20function%20that%20rotates%20the%202D%20list%2090%20degrees%20to%20the%20left.py)
+
+[2차원 리스트(행렬)를 왼쪽으로 180도 회전시키는 함수](https://github.com/mgkim-developer/Algorithm-interview/blob/main/%EC%9C%A0%EC%9A%A9%ED%95%9C%20%ED%95%A8%EC%88%98%20%EC%9E%91%EC%84%B1%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/A%20function%20that%20rotates%20the%202D%20list%20180%20degrees%20to%20the%20right.py)
 
