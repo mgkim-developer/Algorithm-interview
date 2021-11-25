@@ -17,7 +17,9 @@
 
 [✅ 코딩 테스트 주요 라이브러리 문법과 유의점](https://mgyo.tistory.com/161)
 
-[✅ ※ 참고자료 영상을 통한 자료구조와 알고리즘의 시각화](https://visualgo.net/ko)
+[✅ 클래스와 상속에 관한 간단 정리](https://mgyo.tistory.com/165?category=879767)
+
+[※ 참고자료 영상을 통한 자료구조와 알고리즘의 시각화 ※](https://visualgo.net/ko)
 #
 
 ### 📖Useful function library📖
