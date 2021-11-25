@@ -11,15 +11,26 @@
 #
 
 ### ⚡Algorithm-interview⚡
+[자료구조]
+
+[※ 참고자료 영상을 통한 자료구조와 알고리즘의 시각화 ※](https://visualgo.net/ko)
+
+[✅ 클래스와 상속에 관한 간단 정리](https://mgyo.tistory.com/165?category=879767)
+
+[✅ Array(배열)](https://github.com/mgkim-developer/Algorithm-interview/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Array.ipynb)
+
+[✅ Liked List(단일 연결 리스트)](https://github.com/mgkim-developer/Algorithm-interview/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Array.ipynb)
+
+#
+
+[알고리즘]
+
 [✅ 알고리즘 인터뷰 공부](https://mgyo.tistory.com/152)
 
 [✅ 복잡도](https://mgyo.tistory.com/155)
 
 [✅ 코딩 테스트 주요 라이브러리 문법과 유의점](https://mgyo.tistory.com/161)
 
-[✅ 클래스와 상속에 관한 간단 정리](https://mgyo.tistory.com/165?category=879767)
-
-[※ 참고자료 영상을 통한 자료구조와 알고리즘의 시각화 ※](https://visualgo.net/ko)
 #
 
 ### 📖Useful function library📖
