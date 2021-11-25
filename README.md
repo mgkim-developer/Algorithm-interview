@@ -13,7 +13,7 @@
 ### ⚡Algorithm-interview⚡
 [자료구조]
 
-[※ 참고자료 영상을 통한 자료구조와 알고리즘의 시각화 ※](https://visualgo.net/ko)
+[▶ (참고자료) 영상을 통한 자료구조와 알고리즘의 시각화 ◀](https://visualgo.net/ko)
 
 [✅ 클래스와 상속에 관한 간단 정리](https://mgyo.tistory.com/165?category=879767)
 
