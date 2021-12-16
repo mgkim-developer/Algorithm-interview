@@ -31,6 +31,12 @@
 
 [✅ 코딩 테스트 주요 라이브러리 문법과 유의점](https://mgyo.tistory.com/161)
 
+[✅ 그리디 (당장 좋은 것만 선택하는 그리디)](https://mgyo.tistory.com/170)
+
+[✅ 그리디 (큰 수의 법칙)](https://mgyo.tistory.com/171)
+
+
+
 #
 
 ### 📖Useful function library📖
