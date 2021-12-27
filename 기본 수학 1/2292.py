@@ -16,8 +16,12 @@ while n < 1000000000:
     n = n + 6
     number = number + n
     i = i+1
-    if a <= number+1:
-        result = i + 1
+    if a != 1:
+        if a <= number+1:
+            result = i + 1
+            break
+    elif a == 1:
+        result = 1
         break
     else:
         pass
