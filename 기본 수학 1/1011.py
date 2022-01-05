@@ -7,7 +7,7 @@
 그다음 시기에는 1, 2, 3만큼 이동 가능
 
 이전 작동시기에 k광년을 이동하였을 때는, k-1, k, k+1 만큼 이동 가능.
-
+y지점에 도착하기 바로 직전의 이동거리는 반드시 1
 x 지점부터 y지점으로 이동하는데 필요한 횟수의 최솟값은?
 
 입력
@@ -28,10 +28,39 @@ x는 항상 y보다 작은 값을 갖는다. (0 ≤ x < y < 231)
 
 """
 
-case = int(input())
-for i in range(case):
-    x, y  = map(int, input().split())
-    # -1 0 1
-    # 0 1 2
-    # 1 2 3
+import sys
 
+case = int(sys.stdin.readline())
+for i in range(case):
+    x, y  = map(int, sys.stdin.readline().strip().split())
+    # print(x, y)
+    distance = y-x
+    list = []
+    num = 0
+    count = 0
+    ss = 0
+    for j in range(1, distance + 1):
+        for k in range(1, distance + j):
+            ran = j ** 2
+            if k == ran:
+                # print(ran)
+                num = num + 2
+                list.append(num-1)
+                s = j
+                ss = k
+            else:
+                pass
+    # print(list)
+    # print(ss)
+    # for l in range()
+    if ss - s + 1 <= distance <= ss + s:
+        # print(ss - s + 1,distance, ss + s)
+
+        if ss < distance:
+            count = list[-1]+1
+            print(count)
+        elif distance <= ss:
+            count = list[-1]
+            print(count)
+    else:
+        pass
