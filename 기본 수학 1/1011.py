@@ -28,39 +28,62 @@ x는 항상 y보다 작은 값을 갖는다. (0 ≤ x < y < 231)
 
 """
 
+# --------------------------------시간초과 발생하는 코드-----------------------------------------
+
+# import sys
+#
+# case = int(sys.stdin.readline())
+# for i in range(case):
+#     x, y  = map(int, sys.stdin.readline().strip().split())
+#     # print(x, y)
+#     distance = y-x
+#     list = []
+#     num = 0
+#     count = 0
+#     ss = 0
+#     for j in range(1, distance + 1):
+#         for k in range(1, distance + j):
+#             ran = j ** 2
+#             if k == ran:
+#                 # print(ran)
+#                 num = num + 2
+#                 list.append(num-1)
+#                 s = j
+#                 ss = k
+#             else:
+#                 pass
+#     # print(list)
+#     # print(ss)
+#     # for l in range()
+#     if ss - s + 1 <= distance <= ss + s:
+#         # print(ss - s + 1,distance, ss + s)
+#
+#         if ss < distance:
+#             count = list[-1]+1
+#             print(count)
+#         elif distance <= ss:
+#             count = list[-1]
+#             print(count)
+#     else:
+#         pass
+
+# -------------------------------------------------------------------------------------------------
+
+
 import sys
+case = int(input())
 
-case = int(sys.stdin.readline())
-for i in range(case):
-    x, y  = map(int, sys.stdin.readline().strip().split())
-    # print(x, y)
-    distance = y-x
-    list = []
-    num = 0
-    count = 0
-    ss = 0
-    for j in range(1, distance + 1):
-        for k in range(1, distance + j):
-            ran = j ** 2
-            if k == ran:
-                # print(ran)
-                num = num + 2
-                list.append(num-1)
-                s = j
-                ss = k
-            else:
-                pass
-    # print(list)
-    # print(ss)
-    # for l in range()
-    if ss - s + 1 <= distance <= ss + s:
-        # print(ss - s + 1,distance, ss + s)
 
-        if ss < distance:
-            count = list[-1]+1
-            print(count)
-        elif distance <= ss:
-            count = list[-1]
-            print(count)
-    else:
-        pass
+for _ in range(case):
+    x, y = map(int, sys.stdin.readline().split())
+    distance = y - x
+    count = 0 # 이동 횟수
+    move = 1 # count별 이동 가능한 거리
+    move_plus = 0 # 이동한 거리의 합
+    while move_plus < distance:
+        count = count + 1
+        move_plus = move_plus + move # count 수에 해당하는 move를 더함
+        if count % 2 == 0: # count 가 2의 배수 일 때,
+            move = move + 1
+    print(count)
+
