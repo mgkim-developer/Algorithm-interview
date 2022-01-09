@@ -7,6 +7,31 @@
 4. 더이상 반복할 수 없을 떄까지 2번과 3번의 과정을 반복한다.
 '''
 
+# 에라토스테네스의 체 알고리즘(python)을 이용한 소수 판별 함수(소수 갯수 반환)
+def find_prime_number2(a):
+    import math
+    case = int(input())
+    num_list = list(map(int, input().split(' ')))
+    natural_num = list(range(2, a))  # 자연수 범위를 정한다.(소수는 1이상인 정수이기때문에 1은 뺀상태)
+    count = 0
+
+    for i in range(2, math.ceil(math.sqrt(1000))):  # p²≥100인 p의 배수(p를 제외한)까지만 지우면 된다.
+        for j in natural_num:
+            if j / i == 1:  # 자기 자신으로 나뉘는것은 제외
+                pass
+            elif j % i == 0:  # 그 이외에 나뉘는 수가 존재하면
+                natural_num.remove(j)  # 그 수는 정수 리스트에서 제거
+    for k in num_list:
+        if k in natural_num:  # num_list에 natural_num이랑 중복되는 수가 있다면 count +1
+            # print(k)
+            count += 1
+
+    print(count)
+
+find_prime_number2(1000) # 1000까지의 수 중에서 탐색
+
+
+#---------------------------------------------------------------------------------------------------------
 
 
 # 에라토스테네스의 체 알고리즘(python)
@@ -46,7 +71,5 @@ def find_prime_number(a):
 
     print(count)
 
-prime_num = find_prime_number(1000)
-
-
+# prime_num = find_prime_number(1000)
 
