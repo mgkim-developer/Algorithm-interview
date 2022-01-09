@@ -27,19 +27,26 @@ def find_prime_number(a):
                 j = j + 1
 
     # 모든 소수 출력
+    prime_num_list = []
     for i in range(2, a + 1):
         if array[i]:
-            print(i, end=' ')
+            # print(i, end=' ')
+            prime_num_list.append(i)
+    # print(prime_num_list)
+    # print(type(prime_num_list))
+
+    case = int(input())
+    list_input = list(map(int, input().split()))
+    # print(list)
+
+    count = 0
+    for k in list_input:
+        if k in prime_num_list:
+            count = count + 1
+
+    print(count)
 
 prime_num = find_prime_number(1000)
 
-case = int(input())
-list = list(map(int, input().split()))
-# print(list)
 
-count = 0
-for k in list:
-    if k in prime_num:
-        count = count + 1
 
-print(count)
