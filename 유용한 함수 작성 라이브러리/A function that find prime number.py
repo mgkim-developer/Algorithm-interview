@@ -36,7 +36,10 @@ def find_prime_number(a):
 # find_prime_number(a)
 
 
-# 에라토스테네스의 체 알고리즘(python)을 이용한 소수 판별 함수(소수 갯수 반환)
+
+
+#--------------- 이건 에라토스테네스의 체 이용한 것은 아님(이 함수 사용시 시간초과 주의)----------------
+# 소수 판별 함수(소수 갯수 반환)
 def find_prime_number2(a):
     import math
     # case = int(input())
