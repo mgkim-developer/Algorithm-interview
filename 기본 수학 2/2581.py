@@ -8,7 +8,11 @@ prime_range = n - m
 # print(prime_range)
 
 natural_list = [i for i in range(m, n + 1)]
-print(natural_list)
+if natural_list[0] == 1:
+    natural_list = natural_list[1:]
+else:
+    natural_list = natural_list[:]
+# print(natural_list)
 
 import math
 
@@ -23,28 +27,31 @@ def find_prime_num(n): # n까지의 소수를 찾는 함수
                 prime_num.remove(l) # 그 수는 소수 리스트에서 제거
     # print(prime_num)
 
-    return prime_num
+    return prime_num[1:]    # 1은 소수가 아니므로 1은 제외
 
 prime_num_list = find_prime_num(n)
-print(prime_num_list)
+# print(prime_num_list)
 
 # print(natural_list)
 
-result = natural_list
+result = []
 
 for k in natural_list:
     # print(natural_list)
-    print(k)
-    # if k not in prime_num_list:
-    #     natural_list.remove(k)
-    # else:
-    #     pass
+    # print(k)
+    if k not in prime_num_list:
+        pass
+    else:
+        result.append(k)
 
-if len(natural_list) == 0:
+# print(result)
+
+if len(result) == 0:
     print(-1)
 else:
-    print(natural_list)
-
-
-61, 67, 71, 73, 79, 83, 89, 97
-
+    plus = 0
+    result.sort()
+    for e in range(len(result)):
+        plus = plus+result[e]
+    print(plus)
+    print(result[0])
