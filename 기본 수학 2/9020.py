@@ -1,5 +1,5 @@
 '''
-골드바흐의 추측은 유명한 정소ㅜ론의 미해결 문제다.
+골드바흐의 추측은 유명한 정수론의 미해결 문제다.
 2보다 큰 모든 짝수는 두 소수의 합으로 나타낼 수 있다는 것이다. 이러한 수를 골드바흐 수라고 한다.
 그리고, 짝수를 두 소수의 합으로 나타내는 표현을 그 수의 골드바흐 파티션이라고 한다.
 ex) 4 = 2 + 2, 6 = 3 + 3 등이다.
@@ -43,23 +43,26 @@ for i in range(2, len(array)):
 
 # print(prime_num)
 
+
+# 소수 둘을 정하고 합이 n이 되는지 보는 것 O(N^2)
+# n에서 어떤 소수를 뺀 값이 소수인지 확인하는 것 O(N*logN)
+
+''' 처음에는 시간복잡도 N^2의 방법으로 풀었는데, time complexity 문제로 오답처리 받음
+추후 time compeelxity를 고려해서 n에서 어떤 소수를 뺸 값이 소수인지 확인하는 방법으로 재풀이 하여 정답처리 완료.
+시간복잡도를 고려해서 작성하는 습관을 들 것.
+'''
+
+
 case = int(input())
 
 for i in range(case):
     number = int(sys.stdin.readline())
-    # print(type(number))
-    # print(number)
-    # a = number//2
-    # b = number//2
+#--------------------- n에서 어떤 소수를 뺀 값이 소수인지 확인하는 것 O(N*logN)
     result = []
     for j in prime_num:
-        # print(j)
-        for k in prime_num:
-            # print(k)
-            if k + j == number:
-                result.append(j)
-                result.append(k)
-                break
+        if number - j in prime_num:
+            result.append(j)
+            result.append(number-j)
     # print(result)
     difference = result[1] - result[0]
     final_result = []
@@ -68,7 +71,7 @@ for i in range(case):
         b = result[l+1]
         # print(a)
         # print(b)
-        if a - b < difference:
+        if a - b <= difference:
             difference = b - a
             final_result.append(a)
             final_result.append(b)
@@ -77,8 +80,37 @@ for i in range(case):
 
         # print(difference)
         # print(final_result)
-    print(final_result[-2],'',final_result[-1])
+    print(final_result[-1], final_result[-2])
 
-
-
-
+#---------------------------------소수 둘을 정하고 합이 n이 되는지 보는 것 O(N^2)
+    # # print(type(number))
+    # # print(number)
+    # # a = number//2
+    # # b = number//2
+    # result = []
+    # for j in prime_num:
+    #     # print(j)
+    #     for k in prime_num:
+    #         # print(k)
+    #         if k + j == number:
+    #             result.append(j)
+    #             result.append(k)
+    #             break
+    # print(result)
+    # difference = result[1] - result[0]
+    # final_result = []
+    # for l in range(0, len(result), 2):
+    #     a = result[l]
+    #     b = result[l+1]
+    #     # print(a)
+    #     # print(b)
+    #     if a - b <= difference:
+    #         difference = b - a
+    #         final_result.append(a)
+    #         final_result.append(b)
+    #     else:
+    #         pass
+    #
+    #     # print(difference)
+    #     # print(final_result)
+    # print(final_result[-1],'', final_result[-2])
