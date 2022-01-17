@@ -26,8 +26,12 @@ def solution(participant, completion):
                 pass
 
     for i in range(len(sub_participant)):
-        answer = print('"'+ sub_participant[i]+'"')
-
+        answer = sub_participant[i]
     return answer
 
-solution(participant, completion)
+
+'''
+프로그래머스는 백준처럼 print를 요구하는 것이 아니라
+실행 후에 리턴값에 해당하는 변수에 값이 들어있기를 요구한다.
+'''
+# solution(participant, completion)
