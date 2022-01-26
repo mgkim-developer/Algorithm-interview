@@ -63,7 +63,7 @@ def star(n):
             if i == 1 and j == 1:
                 continue
             for k in range(a):
-                map[a*i+k][a*j:a*(j+1)] = map[k][:a] # 핵심인 부분 인데, 다른 방법은 없을까? 새로운 방법을 생각해 보는건 어떨까?
+                map[a*i+k][a*j:a*(j+1)] = map[k][:a] # 가장 핵심인 부분이고, 이 풀이법이 지금으로서는 가장 우아한 풀이법 같다고 판단함.
 
 
     # print(map)
@@ -80,12 +80,3 @@ for i in range(len(map)):
         else:
             print(' ', end = '')
     print()
-
-
-
-
-
-
-
-
-
