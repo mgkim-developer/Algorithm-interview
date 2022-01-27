@@ -30,23 +30,23 @@
 2 3
 1 3
 '''
-def move_plate(n, start, end, sub):
+def hanoi(n, start, end, sub):
     if n == 1:
         count.append(start)
         arr.append(start)
         arr.append(end)
         return
-    move_plate(n-1, start, sub, end)
+    hanoi(n-1, start, sub, end)
     arr.append(start)
     arr.append(end)
     count.append(start)
-    move_plate(n-1, sub, end, start)
+    hanoi(n-1, sub, end, start)
 
 n = int(input())
 count = []
 arr = []
 
-move_plate(n, 1, 3, 2)
+hanoi(n, 1, 3, 2)
 print(len(count))
 for i in range(0, len(arr), 2):
     print(arr[i],arr[i+1])
