@@ -35,6 +35,9 @@
 
 [✅ 그리디 (큰 수의 법칙)](https://mgyo.tistory.com/171)
 
+[✅ 그리디 (숫자 카드 게임)](https://mgyo.tistory.com/186)
+
+
 
 
 #
