@@ -37,6 +37,9 @@
 
 [✅ 그리디 (숫자 카드 게임)](https://mgyo.tistory.com/186)
 
+[✅ 그리디 (1이 될 때까지)](https://mgyo.tistory.com/188)
+
+
 
 
 
