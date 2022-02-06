@@ -39,7 +39,7 @@
 
 [✅ Chapter3-4 그리디 (1이 될 때까지)](https://mgyo.tistory.com/188)
 
-[✅ 구현 (아이디어를 코드로 바꾸는 구현)](https://mgyo.tistory.com/189)
+[✅ Chapter4-1 구현 (아이디어를 코드로 바꾸는 구현)](https://mgyo.tistory.com/189)
 
 
 
