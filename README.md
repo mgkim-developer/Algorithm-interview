@@ -27,17 +27,17 @@
 
 [✅ 알고리즘 인터뷰 공부](https://mgyo.tistory.com/152)
 
-[✅ 복잡도](https://mgyo.tistory.com/155)
+[✅ Chapter1-3 복잡도](https://mgyo.tistory.com/155)
 
-[✅ 코딩 테스트 주요 라이브러리 문법과 유의점](https://mgyo.tistory.com/161)
+[✅ Chapter2-1~2 코딩 테스트 주요 라이브러리 문법과 유의점](https://mgyo.tistory.com/161)
 
-[✅ 그리디 (당장 좋은 것만 선택하는 그리디)](https://mgyo.tistory.com/170)
+[✅ Chapter3-1 그리디 (당장 좋은 것만 선택하는 그리디)](https://mgyo.tistory.com/170)
 
-[✅ 그리디 (큰 수의 법칙)](https://mgyo.tistory.com/171)
+[✅ Chapter3-2 그리디 (큰 수의 법칙)](https://mgyo.tistory.com/171)
 
-[✅ 그리디 (숫자 카드 게임)](https://mgyo.tistory.com/186)
+[✅ Chapter3-3 그리디 (숫자 카드 게임)](https://mgyo.tistory.com/186)
 
-[✅ 그리디 (1이 될 때까지)](https://mgyo.tistory.com/188)
+[✅ Chapter3-4 그리디 (1이 될 때까지)](https://mgyo.tistory.com/188)
 
 [✅ 구현 (아이디어를 코드로 바꾸는 구현)](https://mgyo.tistory.com/189)
 
