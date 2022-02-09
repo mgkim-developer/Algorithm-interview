@@ -20,7 +20,7 @@ dy = [0, 1, 0, -1]
 def turn_left():
     global direction
     direction = direction - 1
-    if direction == -1:
+    if direction == -1: # 0(북쪽)에서 왼쪽으로 90도 돌면 서쪽이기때문에 0에서 -1하면 -1이기 떄문에 이것을 서쪽인 3으로 예외처리 해줌
         direction = 3
 
 # 시뮬레이션 시작
@@ -57,3 +57,12 @@ while True:
 
 # 정답 출력
 print(count)
+
+# 입력 예시
+
+# 4 4
+# 1 1 0
+# 1 1 1 1
+# 1 0 0 1
+# 1 1 0 1
+# 1 1 1 1
