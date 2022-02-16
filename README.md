@@ -15,8 +15,6 @@
 
 [▶ (참고자료) 영상을 통한 자료구조와 알고리즘의 시각화 ◀](https://visualgo.net/ko)
 
-[✅ 클래스와 상속에 관한 간단 정리](https://mgyo.tistory.com/165?category=879767)
-
 [✅ Array(배열)](https://github.com/mgkim-developer/Algorithm-interview/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Array.ipynb)
 
 [✅ Liked List(단일 연결 리스트)](https://github.com/mgkim-developer/Algorithm-interview/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Linked%20List%20(basic).ipynb)
@@ -49,10 +47,20 @@
 
 [✅ Chapter5-2 탐색 알고리즘 DFS/BFS](https://mgyo.tistory.com/194)
 
+[✅ Chapter5-3 탐색 알고리즘 DFS - 음료수 얼려 먹기](https://mgyo.tistory.com/196)
+
+[✅ Chapter5-4 탐색 알고리즘 BFS - 미로 탈출](https://mgyo.tistory.com/198)
 
 
 
+#
 
+[부록]
+
+[✅ 클래스와 상속에 관한 간단 정리](https://mgyo.tistory.com/165?category=879767)
+
+[✅ 파이썬 collections의 deque를 사용하는 이유](https://mgyo.tistory.com/195
+)
 
 
 
