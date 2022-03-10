@@ -53,6 +53,9 @@
 
 [✅ Chapter6-1 기준에 따라 데이터를 정렬(선택 정렬, 삽입 정렬, 퀵 정렬, 계수 정렬, 정렬 라이브러리)](https://mgyo.tistory.com/207)
 
+[✅ Chapter6-2 정렬 위에서 아래로](https://mgyo.tistory.com/213)
+
+
 
 
 
