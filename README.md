@@ -57,6 +57,8 @@
 
 [✅ Chapter6-3 정렬 - 성적이 낮은 순서로 학생 출력하기](https://mgyo.tistory.com/217)
 
+[✅ Chapter6-4 정렬 - 두 배열의 원소 교체](https://mgyo.tistory.com/221)
+
 
 
 
