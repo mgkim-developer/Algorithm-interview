@@ -29,7 +29,7 @@
 
 [✅ Chapter2-1~2 코딩 테스트 주요 라이브러리 문법과 유의점](https://mgyo.tistory.com/161)
 
-[✅ Chapter3-1 그리디 (당장 좋은 것만 선택하는 그리디)](https://mgyo.tistory.com/170)
+[✅ Chapter3-1 그리디 - 당장 좋은 것만 선택하는 그리디](https://mgyo.tistory.com/170)
 
 [✅ Chapter3-2 그리디 (큰 수의 법칙)](https://mgyo.tistory.com/171)
 
@@ -37,29 +37,32 @@
 
 [✅ Chapter3-4 그리디 (1이 될 때까지)](https://mgyo.tistory.com/188)
 
-[✅ Chapter4-1 구현 (아이디어를 코드로 바꾸는 구현)](https://mgyo.tistory.com/189)
+[✅ Chapter4-1 구현 - 아이디어를 코드로 바꾸는 구현](https://mgyo.tistory.com/189)
 
 [✅ Chapter4-2 구현 (왕실의 나이트)](https://mgyo.tistory.com/191)
 
 [✅ Chapter4-3 구현 (게임 개발)](https://mgyo.tistory.com/192)
 
-[✅ Chapter5-1 꼭 필요한 자료구조 기초](https://mgyo.tistory.com/193)
+[✅ Chapter5-1 DFS/BFS - 꼭 필요한 자료구조 기초](https://mgyo.tistory.com/193)
 
-[✅ Chapter5-2 탐색 알고리즘 DFS/BFS](https://mgyo.tistory.com/194)
+[✅ Chapter5-2 DFS/BFS - 탐색 알고리즘 DFS/BFS](https://mgyo.tistory.com/194)
 
-[✅ Chapter5-3 탐색 알고리즘 DFS - 음료수 얼려 먹기](https://mgyo.tistory.com/196)
+[✅ Chapter5-3 DFS/BFS (음료수 얼려 먹기)](https://mgyo.tistory.com/196)
 
-[✅ Chapter5-4 탐색 알고리즘 BFS - 미로 탈출](https://mgyo.tistory.com/198)
+[✅ Chapter5-4 DFS/BFS (미로 탈출)](https://mgyo.tistory.com/198)
 
-[✅ Chapter6-1 기준에 따라 데이터를 정렬(선택 정렬, 삽입 정렬, 퀵 정렬, 계수 정렬, 정렬 라이브러리)](https://mgyo.tistory.com/207)
+[✅ Chapter6-1 정렬 (기준에 따라 데이터를 정렬)](https://mgyo.tistory.com/207)
 
-[✅ Chapter6-2 정렬 - 위에서 아래로](https://mgyo.tistory.com/213)
+[✅ Chapter6-2 정렬 (위에서 아래로)](https://mgyo.tistory.com/213)
 
-[✅ Chapter6-3 정렬 - 성적이 낮은 순서로 학생 출력하기](https://mgyo.tistory.com/217)
+[✅ Chapter6-3 정렬 (성적이 낮은 순서로 학생 출력하기)](https://mgyo.tistory.com/217)
 
-[✅ Chapter6-4 정렬 - 두 배열의 원소 교](https://mgyo.tistory.com/221)
+[✅ Chapter6-4 정렬 (두 배열의 원소 교체)](https://mgyo.tistory.com/221)
 
 [✅ Chapter7-1 이진 탐색 - 범위를 반씩 좁혀가는 탐색](https://mgyo.tistory.com/237)
+
+[✅ Chapter7-2 이진 탐색 (부품 찾기)](https://mgyo.tistory.com/240)
+
 
 
 
