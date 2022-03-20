@@ -63,6 +63,9 @@
 
 [✅ Chapter7-2 이진 탐색 (부품 찾기)](https://mgyo.tistory.com/240)
 
+[✅ Chapter7-3 이진 탐색 (떡볶이 떡 만들기)](https://mgyo.tistory.com/243)
+
+
 
 
 
