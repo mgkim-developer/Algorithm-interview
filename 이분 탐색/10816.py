@@ -35,6 +35,21 @@ m_list = list(map(int, input().split()))
 # print(n_list_alpha)
 #----------------------------------------------------------------------------------
 
+def upper_bound(array, target):
+
+    start, end = 0, len(array)
+
+    while start < end:  #start와 end가 만나는 지점이 target값 보다 큰 값이 처음 나오는 위치
+        # mid = start + (end - start) // 2
+        mid = (start + end) // 2
+
+        if array[mid] <= target:
+            start = mid + 1
+        else:
+            end = mid
+
+    return start
+
 def lower_bound(array, target):
 
     start, end = 0, len(array)
@@ -51,22 +66,9 @@ def lower_bound(array, target):
     return start
 
 
-def upper_bound(array, target):
-
-    start, end = 0, len(array)
-
-    while start < end:  #start와 end가 만나는 지점이 target값 보다 큰 값이 처음 나오는 위치
-        # mid = start + (end - start) // 2
-        mid = (start + end) // 2
-
-        if array[mid] <= target:
-            start = mid + 1
-        else:
-            end = mid
-
-    return end
-
 # print(n_list_alpha)
-# print(lower_bound(n_list_alpha, 10))
+# print(upper_bound(n_list_alpha, 3))
+# print(lower_bound(n_list_alpha, 3))
+
 for i in m_list:
     print(upper_bound(n_list_alpha, i) - lower_bound(n_list_alpha, i), end = ' ')
