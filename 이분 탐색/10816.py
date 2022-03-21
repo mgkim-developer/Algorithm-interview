@@ -66,7 +66,7 @@ def upper_bound(array, target):
 
     return end
 
-print(n_list_alpha)
-print(lower_bound(n_list_alpha, 10))
+# print(n_list_alpha)
+# print(lower_bound(n_list_alpha, 10))
 for i in m_list:
     print(upper_bound(n_list_alpha, i) - lower_bound(n_list_alpha, i), end = ' ')
