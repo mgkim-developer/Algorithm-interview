@@ -20,8 +20,10 @@ while(start <= end):
     cable_count = 0
     mid = (start + end) // 2
     for i in k_list:
-        divide_cable = i // mid
-        cable_count = cable_count + divide_cable
+        if mid == 0:
+            mid = 1
+        # divide_cable = i // mid
+        cable_count = cable_count + (i // mid)
 
     if cable_count == n:
         if mid == 0:
@@ -75,6 +77,44 @@ k_list부분을 sum으로
 # cable_count == N이면 탐색 종료
 # cable_count < N이면 end을 mid-1으로 옮기고 다시 중간점 m을 구한다.
 # cable_count > N이면 start을 mid+1으로 옮기고 다시 중간점 m을 구한다.
-# 이떄의 m을 반환
+# 이떄의 mid을 반환
+
+2022/04/17
+반례1
+2 2 
+1
+1
+
+반례2
+25 421
+25468
+42380
+34638
+19901
+35751
+24933
+15368
+854
+24429
+35451
+32479
+22039
+24149
+45061
+34767
+5716
+13347
+11121
+19624
+12193
+34154
+24840
+40357
+5152
+42609
+
+답: 1443
+
+
 
 '''
