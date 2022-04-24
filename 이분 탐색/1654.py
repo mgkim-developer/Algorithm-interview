@@ -7,38 +7,43 @@ for i in range(k):
 
 
 # -------------------- binary search 사용 코드 -----------------------
-# print(k_list)
+print(k_list)
 k_list.sort()   # 가장 길이가 긴 케이블을 구하기 위해 정렬
 # print(k_list)
 best_long = k_list[-1]  # 가장 길이가 긴 케이블을 best_long에 저장
-# print(best_long)
+print("best_long=", best_long)
 start = 0
 end = best_long
+print("end=",end)
 
-cable_count = 0
 while(start <= end):
+    # cable_count_hist = []
     cable_count = 0
     mid = (start + end) // 2
+    print("mid= ", mid)
+    if mid == 0:
+        mid = 1
+        print("mid= ", mid)
+        break
+    # mid = 1443
     for i in k_list:
-        if mid == 0:
-            mid = 1
         # divide_cable = i // mid
         cable_count = cable_count + (i // mid)
+        # cable_count_hist.append(cable_count)
+    print("cable_count", cable_count)
 
     if cable_count == n:
-        if mid == 0:
-            print(1)
-        else:
-            print(mid)
+        print(mid)
         break
-    elif cable_count < n:
-        end = mid - 1
     elif cable_count > n:
         start = mid + 1
+    elif cable_count < n:
+        end = mid - 1
+
 
 
 # 지금 코드 반례
-'''
+'''우
 2 10
 1
 100
@@ -115,6 +120,21 @@ k_list부분을 sum으로
 
 답: 1443
 
+바로 위의 반례의 경우, 
+mid = 1442일때와,
+mid = 1443일때 모두 cable_count가 421인데,
+내가 작성한 코드에서는 mid가 1442로 나온다.
+그런데, 정답은 1443이다.
+문제가 뭘까?
+
+반례
+4 4
+5
+1
+1
+1
+
+답: 1
 
 
 '''
