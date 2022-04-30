@@ -7,39 +7,24 @@ for i in range(k):
 
 
 # -------------------- binary search 사용 코드 -----------------------
-print(k_list)
 k_list.sort()   # 가장 길이가 긴 케이블을 구하기 위해 정렬
 # print(k_list)
 best_long = k_list[-1]  # 가장 길이가 긴 케이블을 best_long에 저장
-print("best_long=", best_long)
-start = 0
+start = 1
 end = best_long
-print("end=",end)
 
 while(start <= end):
-    # cable_count_hist = []
     cable_count = 0
     mid = (start + end) // 2
-    print("mid= ", mid)
-    if mid == 0:
-        mid = 1
-        print("mid= ", mid)
-        break
-    # mid = 1443
+
     for i in k_list:
-        # divide_cable = i // mid
         cable_count = cable_count + (i // mid)
-        # cable_count_hist.append(cable_count)
-    print("cable_count", cable_count)
 
-    if cable_count == n:
-        print(mid)
-        break
-    elif cable_count > n:
+    if cable_count >= n:
         start = mid + 1
-    elif cable_count < n:
+    else:
         end = mid - 1
-
+print(end)
 
 
 # 지금 코드 반례
@@ -137,4 +122,24 @@ mid = 1443일때 모두 cable_count가 421인데,
 답: 1
 
 
+9 3785
+73085
+6747
+87849
+30807
+79944
+26905
+92558
+15313
+2016
+
+답: 109
+
+
+2022/04/30
+mid를 반환하는 것이 아니라 end를 반환해야한다.
+왜냐하면, mid인 경우가 절대 없을 수도 있기 떄문이다.
+1차이를 경계로 한쪽에서는 n보다 작고, 한쪽에서는 n보다크게 나올 수 있다.
+"정확히" n개라고 하지 않았기 때문에, n개를 얻을수 있다면 정답으로 봐야한다.
+즉, n+3개를 얻었다면 나머지는 버리면 되는 셈이다.
 '''
