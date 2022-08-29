@@ -38,7 +38,7 @@ import heapq
 #
 # result = 0
 #
-# # 힙에 원소가 1개 남을 때까지
+# 힙에 원소가 1개 남을 때까지
 # while len(heap) != 1:
 #     # 가장 작은 2개의 카드 묶음 꺼내기 heapq.heapop 이용
 #     heap.sort()
