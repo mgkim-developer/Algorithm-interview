@@ -31,7 +31,7 @@ budget_request_num_len = len(budget_request_num)
 # print(budget_request_num)
 
 # 이분탐색 함수 선언
-# 이 함수에서는 요청 받은 예산들중 가장 작은 예산금액부터 가장 큰 금액 사이를 탐색하면서 조건에 맞는 상한액을 찾을 때까지 탐색을 반복함.
+# 이 함수에서는 요청 받은 예산들중 0부터 가장 큰 금액 사이를 탐색하면서 조건에 맞는 상한액을 찾을 때까지 탐색을 반복함.
 def binary_search(budget_request_num, start, end):
     budget_request = budget_request_og[:]
     if start > end:
