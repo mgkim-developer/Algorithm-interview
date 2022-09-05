@@ -62,7 +62,7 @@ for i in range(n):
 d = [0] * (n + 2)
 
 for i in range(n, 0, -1):
-    if i + schedule[i][0] > n + 1:
+    if i + schedule[i][0] > n + 1: # 마지막날에 소요시간이 1일 짜리인 것은 상담 가능하므로 n + 1
         d[i] = d[i + 1]
     else:
         d[i] = max(d[i + 1], schedule[i][1] + d[i + schedule[i][0]])
