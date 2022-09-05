@@ -53,18 +53,22 @@ import sys
 n = int(input())
 
 # 스케줄 입력받기
-schedule = [[]]
+schedule = []
 for i in range(n):
     t, p = map(int, sys.stdin.readline().rstrip().split())
     schedule.append([t, p])
+# 스케줄 입력 거꾸로 뒤집기
+schedule.reverse()
+schedule.insert(0, [])
+# print(schedule)
 
 # dp 테이블 초기화
-d = [0] * (n + 2)
+d = [0] * (n + 1) # DP 배열 또한 인덱스를 날짜로 사용하기 위해 길이를 1 증가
 
-for i in range(n, 0, -1):
-    if i + schedule[i][0] > n + 1: # 마지막날에 소요시간이 1일 짜리인 것은 상담 가능하므로 n + 1
-        d[i] = d[i + 1]
+for i in range(1, n + 1):
+    if i < schedule[i][0]:
+        d[i] = d[i - 1]
     else:
-        d[i] = max(d[i + 1], schedule[i][1] + d[i + schedule[i][0]])
+        d[i] = max(d[i - 1], schedule[i][1] + d[i - schedule[i][0]])
 
-print(d[1])
+print(d[n])
