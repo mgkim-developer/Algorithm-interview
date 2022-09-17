@@ -8,7 +8,7 @@ str2 = ' ' + sys.stdin.readline().rstrip()
 
 dp = [[0] * len(str2) for i in range(len(str1))]
 
-print(dp)
+# print(dp)
 
 for i in range(1, len(str1)):
     for j in range(1, len(str2)):
