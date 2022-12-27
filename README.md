@@ -68,6 +68,9 @@
 
 [✅ Chapter7-3 이진 탐색 (떡볶이 떡 만들기)](https://mgyo.tistory.com/243)
 
+[✅ Chapter8-1 다이나믹 프로그래밍 - 다이나믹 프로그래밍](https://mgyo.tistory.com/757)
+
+
 
 
 
