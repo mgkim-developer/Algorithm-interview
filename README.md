@@ -70,6 +70,10 @@
 
 [✅ Chapter8-1 다이나믹 프로그래밍 - 다이나믹 프로그래밍](https://mgyo.tistory.com/757)
 
+[✅ Chapter8-2 다이나믹 프로그래밍 - (1로 만들기)](https://mgyo.tistory.com/758)
+
+[✅ Chapter8-3 다이나믹 프로그래밍 - (개미 전사)](https://mgyo.tistory.com/759)
+
 
 
 
