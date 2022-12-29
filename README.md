@@ -74,6 +74,10 @@
 
 [✅ Chapter8-3 다이나믹 프로그래밍 - (개미 전사)](https://mgyo.tistory.com/759)
 
+[✅ Chapter8-4 다이나믹 프로그래밍 - (바닥 공사)](https://mgyo.tistory.com/760)
+
+[✅ Chapter8-5 다이나믹 프로그래밍 - (효율적인 화폐 구성)](https://mgyo.tistory.com/761)
+
 
 
 
