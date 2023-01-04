@@ -78,7 +78,7 @@
 
 [✅ Chapter8-5 다이나믹 프로그래밍 - (효율적인 화폐 구성)](https://mgyo.tistory.com/761)
 
-[✅ Chapter9-1 최단 경로 - (다익스트라, 플로이드 워셜 알고리즘)](https://mgyo.tistory.com/764)
+[✅ Chapter9-1 최단 경로 - 다익스트라, 플로이드 워셜 알고리즘](https://mgyo.tistory.com/764)
 
 [✅ Chapter9-2 최단 경로 - (미래 도시 (플로이드 워셜 알고리즘))](https://mgyo.tistory.com/766)
 
