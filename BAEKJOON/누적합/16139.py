@@ -66,7 +66,9 @@ stirng.ascii_lowercase를 이용해서 소문자를 반환함과 동시에 for�
 if s[i] == char 이면
 count = count + 1 이 되도록 하고
 char_list[char].append(count)는 if문 밖에서 해주면,
-if문을 통과하지 않아도 char_list에 0을 append하게 하여 원하는 형태의 2차원 dic를 만들 수 있다. * dic 사용법 확실히 파악할 것.
+if문을 통과하지 않아도 char_list에 0을 append하게 하여 원하는 형태의 2차원 dic를 만들 수 있다.
+* dic 사용법 확실히 파악할 것.합
+
 '''
 
 import sys
