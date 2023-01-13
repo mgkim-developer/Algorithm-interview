@@ -59,7 +59,7 @@ accum_list = [[0] * len(word) for _ in range(accum_len)]
 
 stirng.ascii_lowercase를 이용해서 소문자를 반환함과 동시에 for문으로 char를 받아서 돌리고,
 각 알파벳을 key로 하는 dic을 만드는데, char_list[char] = [0]  이렇게 하면
-{'a': [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2], 'b': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'c': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]...
+{'a': [0], 'b': [0], 'c': [0]...
 이런식으로 만들어진다.
 
 그리고 이중 for문을 구성하는데, len(s)를 돌도록 하여
@@ -84,6 +84,7 @@ for char in string.ascii_lowercase:
         if s[i] == char:
             count = count + 1
         char_list[char].append(count)
+    print(char_list)
 
 for _ in range(q):
     char, start, end = sys.stdin.readline().rstrip().split()
