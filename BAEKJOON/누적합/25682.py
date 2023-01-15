@@ -59,12 +59,45 @@ BWBW
 
 일단 시간초과 난다.
 
+
 ii)
 처음 생각한 기본 로직은 맞는 것 같음.
-그러면 이제 시간복잡도, 공간복잡도 등을 고려해서
+그러면 이제 시간복잡도, 공간복잡도 등을 줄일 수 있는 방법을 생각해보자.
+
+일단, 생각을 해보니까,
+체스판의 좌측 상단이 B인 경우와 W인 경우를 나눠서 둘다 구할 필요가 없는 것 같다.
+왜냐하면, 체스판의 전체 수 - 좌측 상단이 B로 시작한 체스판에서 수정해야 하는 개수 = w로 직한판 바둑판에서 B로 수정해야 하는 개수 가 성립한다.
+그리고, 정상배열도 안만들어 놓아도 될 것 같다. 왜냐하면, 규칙으로 대체 가능하기 때문이다.
+
+결국 로직은,
+
+맨 위, 왼쪽에 흰색일 경우와 검은색일 경우를 배열은 선언하고 비교해서 다른면 1 같은면 0으로 표시를 한다. (인덱스 1부터 시작한다하면, 행과 열 더해서 짝수이면 같고 홀수이면 다르다.)
+탐색이 끝나면 그 배열의 누적합을 구한다.
+누적합을 구한 2차원 배열에서 K × K  구간합중 가장 작은 값을 구하고 맨위 왼쪽 흰색인 경우와 검은색인 경우중 작은 작은 값을 출력하면된다.
+
+
+---
+2차원 dp 배열을 만들어서 시작점이 W 일때와 B 일때 누적합을 구해준다.
+
+이후 K×K 크기만큼 배열을 탐색해서 누적합의 최소값을 찾는다.
+
+dp 배열의 2차원 누적합은
+dp[i+1][j+1]=dp[i][j+1]+dp[i+1][j]−dp[i][j]+value
+으로 계산해준다. 이때 value 는 체스판이 color 와 같으면 1 아니면 0 을 가지게 된다.
+
+value=L[i][j]!=color -> if L[i][j]!=color : value=1 과 같다
+
+K×K 체스판에서의 누적합을 구하는 점화식은
+dp[i+K−1][j+K−1]−dp[i+K−1][j−1]−dp[i−1][j+K−1]+dp[i−1][j−1]
+와 같다. 기존의 누적합 식에 K를 넣어주었다.
+
+출력은 print(min(Chess('W'),Chess('B'))) 를 통해 최소값을 구할수 있다.
+
+총 2번의 탐색을 하기때문에 시간초과가 발생할수 있으므로 pypy3 로 제출해야한다.
 '''
 
 import sys
+sys.maxsize
 
 # n, m, k 입력받기
 n, m, k = map(int, sys.stdin.readline().rstrip().split())
@@ -75,75 +108,21 @@ for i in range(n):
     board.append(str)
 # print(board)
 
-# 왼쪽 상단이 B라고 가정한 누적합 리스트
-b_prefix_sum = [[0] * (m + 1) for _ in range(n)]
-# print(b_prefix_sum)
-# 왼쪽 상단이 W라고 가정한 누적합 리스트
-w_prefix_sum = [[0] * (m + 1) for _ in range(n)]
-# print(w_prefix_sum)
+def chess(color):
+    prefix_sum = [[0] * (m + 1) for _ in range(n + 1)]
+    for i in range(n):
+        for j in range(m):
+            if (i + j) % 2 == 0:    # 인덱스가 0부터 시작하는 것을 고려했을 때, board의 행과 열을 더해서 짝수이면 color와 다르고 (1)
+                value = board[i][j] != color
+            else:   # 인덱스가 0부터 시작하는 것을 고려했을 때, board의 행과 열을 더해서 홀수이면 color와 같다 (0)
+                value = board[i][j] == color
+            prefix_sum[i + 1][j + 1] = prefix_sum[i][j + 1] + prefix_sum[i + 1][j] - prefix_sum[i][j] + value   # 2차원 배열의 누적합을 구하는 것이다. -prefix_sum[i][j]는 중복으로 더한 부분을 한번 뺴준 것.
 
-# n * m 크기의 정상적인 체스판 생성
-# 좌측 상단이 B인 것으로 하나만 생성하고, W인 것은 조건을 반대로 넣어서 비교 할 것임.
-good_board = [[0] * m for _ in range(n)]
-for i in range(len(good_board)):
-    for j in range(len(good_board[0])):
-        if i % 2 == 0:
-            if j % 2 == 0:
-                good_board[i][j] = 'B'
-            else:
-                good_board[i][j] = 'W'
-        else:
-            if j % 2 == 0:
-                good_board[i][j] = 'W'
-            else:
-                good_board[i][j] = 'B'
-# print(good_board)
 
-for i in range(n):
-    for j in range(m):
-        # 좌측 상단이 B라고 가정한 누적합 리스트 갱신 (정상 체스판과 다른 갯수를 갱신 할 것임)
-        if good_board[i][j] != board[i][j]:
-            if b_prefix_sum[i][j] == 0:
-                b_prefix_sum[i][j + 1] = 1
-            else:
-                b_prefix_sum[i][j + 1] = b_prefix_sum[i][j] + 1
-        else:
-            b_prefix_sum[i][j + 1] = b_prefix_sum[i][j]
-        # 좌측 상단이 W라고 가정한 누적합 리스트 갱신 (정상 체스판과 다른 갯수를 갱신 할 것임)
-        if good_board[i][j] == board[i][j]:
-            if w_prefix_sum[i][j] == 0:
-                w_prefix_sum[i][j + 1] = 1
-            else:
-                w_prefix_sum[i][j + 1] = w_prefix_sum[i][j] + 1
-        else:
-            w_prefix_sum[i][j + 1] = w_prefix_sum[i][j]
-# print(b_prefix_sum)
-# print(w_prefix_sum)
+    count = sys.maxsize
+    for i in range(1, n - k + 2):
+        for j in range(1, m - k + 2):
+            count = min(count, prefix_sum[i + k - 1][j + k - 1] - prefix_sum[i + k - 1][j - 1] - prefix_sum[i - 1][j + k - 1] + prefix_sum[i - 1][j - 1])   # 2차원 배열의 누적합 점화식에 k 고려해서 작성한 것임다.
+    return count
 
-# 정상 체스판과 다른 갯수를 저장할 변수
-result = int(1e9)
-
-# k * k 크기로 자른다고 가정하고, 누적합 리스트를 이용하여 정상체스판과 색이 다른칸 개수 카운트하기
-for j in range(len(b_prefix_sum[0]) - 1, -1, -1):
-    i = j - k
-    b_tmp = 0
-    w_tmp = 0
-    a = 0
-    if i < 0:
-        pass
-    else:
-        # print(i, j)
-        for y in range(len(b_prefix_sum)):
-            if a + (k - 1) < len(b_prefix_sum) and y + (k - 1) <= len(b_prefix_sum):
-                # print(a)
-                for x in range(a, a + k):
-                    b_tmp = b_tmp + b_prefix_sum[x][j] - b_prefix_sum[x][i]
-                    w_tmp = w_tmp + w_prefix_sum[x][j] - w_prefix_sum[x][i]
-                a = a + 1
-                tmp = min(b_tmp, w_tmp)
-                b_tmp = 0
-                w_tmp = 0
-                if tmp < result:
-                    result = tmp
-
-print(result)
+print(min(chess('B'), chess('W')))
