@@ -34,7 +34,7 @@ minus_INF = int(-1e9)
 n = int(sys.stdin.readline().rstrip())
 # 수열 입력받기
 table = list(map(int, sys.stdin.readline().rstrip().split()))
-# 인덱스 맞춰주기 위해 table에 0을 append
+# 인덱스 맞춰주기 위해 table에 minus_INF을 append
 table.append(minus_INF)
 
 # dp_table[i] = max(dp_table[i - 1] + table[i], table[i]) 값을 비교해서 저장하기 위해 dp_table 선언 밎 초기화
