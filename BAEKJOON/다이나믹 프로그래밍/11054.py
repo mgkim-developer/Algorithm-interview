@@ -12,7 +12,6 @@ arr[]을 뒤집어서 LIS를 구하고, 그것을 다시 뒤집으면 arr에 대
 가장 긴 바이토닉 부분 수열을 구할 수 있다.
 '''
 import copy
-import plistlib
 import sys
 
 n = int(sys.stdin.readline().rstrip())
@@ -37,7 +36,7 @@ for i in range(n):
             dp_right[i] = dp_right[j]
     dp_right[i] = dp_right[i] + 1
 
-dp_right.reverse()  # arr을 뒤집어서 LIS를 구한 것을 다시 뒤집으면 arr에 대한 LDS임.
+dp_right.reverse()  # arr을 뒤집어서 LIS를 구한 것을 다시 뒤집으면 arr에 대한 LDS(단, 직접 수열을 구하려면, 앞에서부터 큰 값의 인덱스을 찾고, 중복되는 값은 가장 마지막 인덱스를 찾아서 원본 배열과 매칭시켜주면 된다.
 result = 0
 for i in range(n):
     bitonic =  dp_left[i] + dp_right[i]
