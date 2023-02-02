@@ -18,7 +18,6 @@ import sys
 n = int(sys.stdin.readline().rstrip())
 arr = list(map(int, sys.stdin.readline().rstrip().split()))
 candidate_list = [0 for i in range(n)]
-num_index = 0
 
 dp_left = [0 for i in range(n)]
 dp_right = [0 for i in range(n)]
