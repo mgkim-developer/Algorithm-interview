@@ -1,5 +1,5 @@
 # union-by-rank 최적화 적용 union 함수
-def union(parent, x, y, rank):
+def union_parent(parent, x, y, rank):
     rootX = find_parent(parent, x)
     rootY = find_parent(parent, y)
 
