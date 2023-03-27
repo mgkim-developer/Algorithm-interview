@@ -44,7 +44,7 @@ def union_parent(parent, x, y, rank):
     if rootX == rootY:
         return
 
-    # rank가 큰 트리에 rank가 작은 트리에 붙인다
+    # rank가 큰 트리에 rank가 작은 트리를 붙인다
     if rank[rootX] < rank[rootY]:
         parent[rootX] = rootY
     elif rank[rootX] > rank[rootY]:
