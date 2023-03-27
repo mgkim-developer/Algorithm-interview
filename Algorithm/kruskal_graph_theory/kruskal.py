@@ -13,6 +13,10 @@ def union_parent(parent, x, y, rank):
     rootX = find_parent(parent, x)
     rootY = find_parent(parent, y)
 
+    # 두 값의 root가 같으면(이미 같은 트리) 연결 X(합치지 않음)
+    if rootX == rootY:
+        return
+
     # rank가 큰 트리에 작은 트리를 붙인다.
     if rank[rootX] < rank[rootY]:
         parent[rootX] = rootY
