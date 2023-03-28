@@ -8,23 +8,43 @@
 
 #
 
-### 💻Computer Science💻
-[✅ Operating System](https://mgyo.tistory.com/category/Computer%20Science/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%28Operating%20System%29)
+### ⚡Algorithm-interview⚡        
+       
+#
+[Problem Solving Posts]        
+[mgyo Blog](https://mgyo.tistory.com/category/Problem%20Solving?page=1)
+     
+
+#    
+
+[주요 알고리즘 정리]    
+      
+[✅ 1. [Algorithm] 그리디](https://mgyo.tistory.com/791)
+   
+[✅ 2. [Algorithm] 구현(시뮬레이션, 완전탐색)](https://mgyo.tistory.com/792)      
+    
+[✅ 3. [Algorithm] DFS / BFS](https://mgyo.tistory.com/793)       
+
+[✅ 4. [Algorithm] 정렬](https://mgyo.tistory.com/794)
+     
+[✅ 5. [Algorithm] 이진 탐색](https://mgyo.tistory.com/795)   
+    
+[✅ 6. [Algorithm] 다이나믹 프로그래밍](https://mgyo.tistory.com/796)      
+
+[✅ 7. [Algorithm] 다익스트라 알고리즘 (최단 경로)](https://mgyo.tistory.com/797)      
+    
+[✅ 8. [Algorithm] 플로이드 워셜 알고리즘 (최단 경로)](https://mgyo.tistory.com/798)       
+
+[✅ 9. [Algorithm] Union-Find 알고리즘 (서로소 집합 Disjoint-Set)](https://mgyo.tistory.com/799)      
+
+[✅ 10. [Algorithm] 크루스칼 알고리즘 (그래프 이론)](https://mgyo.tistory.com/803)      
+     
+[✅ 11. [Algorithm] 위상 정렬 (그래프 이론)](https://mgyo.tistory.com/805)
+
 
 #
 
-### ⚡Algorithm-interview⚡
-[자료구조]
-
-[▶ (참고자료) 영상을 통한 자료구조와 알고리즘의 시각화 ◀](https://visualgo.net/ko)
-
-[✅ Array(배열)](https://github.com/mgkim-developer/Algorithm-interview/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Array.ipynb)
-
-[✅ Liked List(단일 연결 리스트)](https://github.com/mgkim-developer/Algorithm-interview/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Linked%20List%20(basic).ipynb)
-
-#
-
-[알고리즘]
+[이코테 도서 정리]
 
 [✅ 알고리즘 인터뷰 공부](https://mgyo.tistory.com/152)
 
@@ -90,8 +110,25 @@
 
 [✅ Chapter10-3 다양한 그래프 알고리즘 - (도시 분할 계획(신장 트리))](https://mgyo.tistory.com/788)
 
-[✅ Chapter10-4 다양한 그래프 알고리즘 - (커리큘럼(위상 정렬 알고리즘))](https://mgyo.tistory.com/789)
+[✅ Chapter10-4 다양한 그래프 알고리즘 - (커리큘럼(위상 정렬 알고리즘))](https://mgyo.tistory.com/789)    
+   
+[✅ 이코테 도서를 마치며 - Algorithm과 Problem Solving](https://mgyo.tistory.com/790)
+   
+#   
+   
+[Computer Science]   
+[✅ Operating System](https://mgyo.tistory.com/category/Computer%20Science/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%28Operating%20System%29)
 
+
+#
+
+[자료구조]
+
+[▶ (참고자료) 영상을 통한 자료구조와 알고리즘의 시각화 ◀](https://visualgo.net/ko)
+
+[✅ Array(배열)](https://github.com/mgkim-developer/Algorithm-interview/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Array.ipynb)
+
+[✅ Liked List(단일 연결 리스트)](https://github.com/mgkim-developer/Algorithm-interview/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Linked%20List%20(basic).ipynb)
 
 
 
