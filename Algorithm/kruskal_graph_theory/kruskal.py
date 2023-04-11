@@ -24,7 +24,7 @@ def union_parent(parent, x, y, rank):
         parent[rootY] = rootX
     else:   # 만약 rank가 같다면 임의로 rootX 트리에 rootY 트리를 붙인다.
         parent[rootY] = rootX
-        rank[rootX] = rank[rootX]
+        rank[rootX] = rank[rootX] + 1
 
 
 # 크루스칼
