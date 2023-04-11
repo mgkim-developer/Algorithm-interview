@@ -47,7 +47,6 @@ v, e = map(int, input().split())
 
 parent = [i for i in range(v + 1)]
 rank = [0 for i in range(v + 1)]
-
 edges = []
 for i in range(e):
     v1, v2, w = map(int, sys.stdin.readline().rstrip().split())
